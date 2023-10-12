@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    background-color: #adb5bd;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+}
+.header-list {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: azure;
+}
+
+a:hover, a.active {
+    color: blue;
+}
+
+.search-mechanic {
+    background-color: black;
+    padding: 20px;
+}
+
+.search-mechanic > input {
+    height: 25px;
+    padding: 5px;
+    width: 70%;
+}
+
+span {
+    display: flex;
+}
+
+.mechanic-card {
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px;
+    width: max-content;
+}
+
+.group-mechanics {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    nav > ul {
+        display: flex;
+    }
+
+    nav > ul > li {
+        padding: 0 20px;
+    } 
+
+    .search-mechanic {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .search-mechanic > input {
+        height: 25px;
+        padding: 5px;
+        width: 40%;
+    }
+
+    .group-mechanics {
+        /* display: none; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
