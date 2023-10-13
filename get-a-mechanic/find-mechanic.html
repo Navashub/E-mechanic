@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./fm.css">
 </head>
+
 <body>
-    <div class="header"> 
+    <div class="header">
         <nav>
             <h2 class="logo">E-Mechanic</h2>
             <ul class="header-list">
@@ -20,19 +22,60 @@
             </ul>
         </nav>
         <div class="search-mechanic">
-            <input type="text" placeholder="Enter the location you're looking for a Mechanic."/>
-            <button>Search</button>
+            <form action="">
+                <input type="text" placeholder="Enter the location you're looking for a Mechanic." id="locationInput" />
+                <button type="submit" id="btn">Search</button>
+            </form>
+
         </div>
     </div>
-    <h4 style="padding-top:20px;  margin: auto; text-align:center; width:50%; border-bottom:2px solid salmon;">List of all the available mechanics</h4>
-    
-    <div class="group-mechanics">
+    <h4 style="padding-top:20px;  margin: auto; text-align:center; width:50%; border-bottom:2px solid salmon;">List of
+        all the available mechanics</h4>
+    <div id="fundi">
+        <section class="group-mechanics">
+            <!-- <div class="mechanic-card">
+                <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
+                <div>
+                    <span><label for="name">Name </label>
+                        <p>: Martin Bwogo</p>
+                    </span>
+                    <span><label for="location">Location </label>
+                        <p>: Nairobi</p>
+                    </span>
+                    <span><label for="contact">Contact </label>
+                        <p>: martbwogo@gmail.com</p>
+                    </span>
+                    <span><label for="rate">Rate/Hr[Ksh] </label>
+                        <p>: 500</p>
+                    </span>
+                </div>
+                <button>Send Request</button>
+            </div> -->
+            <!-- <div class="mechanic-card">
+            <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
+            <div>
+                <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
+                <span><label for="location">Location </label><p>:  Nairobi</p></span>
+                <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
+                <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
+            </div>
+            <button>Send Request</button>
+        </div> -->
+            <!-- <div class="mechanic-card">
+            <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
+            <div>
+                <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
+                <span><label for="location">Location </label><p>:  Nairobi</p></span>
+                <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
+                <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
+            </div>
+            <button>Send Request</button> -->
+            <!-- </div>
         <div class="mechanic-card">
             <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
             <div>
                 <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
                 <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
                 <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
                 <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
             </div>
@@ -43,56 +86,25 @@
             <div>
                 <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
                 <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
                 <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
                 <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
             </div>
             <button>Send Request</button>
-        </div>
-        <div class="mechanic-card">
+        </div> -->
+            <!-- <div class="mechanic-card">
             <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
             <div>
                 <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
                 <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
                 <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
                 <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
             </div>
             <button>Send Request</button>
-        </div>
-        <div class="mechanic-card">
-            <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
-            <div>
-                <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
-                <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
-                <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
-                <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
-            </div>
-            <button>Send Request</button>
-        </div>
-        <div class="mechanic-card">
-            <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
-            <div>
-                <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
-                <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
-                <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
-                <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
-            </div>
-            <button>Send Request</button>
-        </div>
-        <div class="mechanic-card">
-            <img src="./img.jpg" alt="image alt" style="width: 300px; margin: auto;">
-            <div>
-                <span><label for="name">Name </label><p>:  Martin Bwogo</p></span>
-                <span><label for="location">Location </label><p>:  Nairobi</p></span>
-                <span><label for="address">Address </label><p>:  Opp Kulet Plaza - Ngong Road.</p></span>
-                <span><label for="contact">Contact </label><p>: martbwogo@gmail.com</p></span>
-                <span><label for="rate">Rate/Hr[Ksh] </label><p>: 500</p></span>
-            </div>
-            <button>Send Request</button>
-        </div>
+        </div> -->
+        </section>
     </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
